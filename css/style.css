@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+
+:root{
+    --blue: #3A81DA;
+    --black: #161A1D;
+    --gray: #41484D;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    background: #EEEEEE;
+    font-size: 1.6rem;
+    -webkit-font-smoothing: antialiased;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1280px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.logo {
+    width: 50px;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav a {
+    color: var(--gray);
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+    padding-left: 40px;
+}
+
+header nav a:hover {
+    transition: 0.5s;
+    color: var(--blue);
+}
+
+.btn-nav {
+    color: #fff;
+    background-color: var(--blue);
+    border-radius: 5px;
+    font-size: 1.4rem;
+    padding: 10px 30px 10px 30px;
+    margin-left: 80px;
+}
+
+.btn-nav:hover {
+    transition: 0.3s;
+    color: var(--blue);
+    background-color: #EEEEEE;
+    border: 2px solid var(--blue);
+}
+
+/* ------------ HERO ------------ */
+
+section.hero {
+    margin: 70px 0;
+}
+
+section.hero .container {
+    width: 90%;
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+}
+
+section.hero h1 {
+    color: var(--black);
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+    font-weight: 600;
+}
+
+section.hero h2 {
+    color: var(--blue);
+    font-size: 3.4rem;
+    font-weight: 600;
+}
+
+section.hero p {
+    color: var(--gray);
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-top: 20px;
+}
+
+section.hero .traçado {
+    margin-top: 5px;
+    width: 90px;
+    height: 3px;
+    background-color: var(--blue);
+    border-radius: 5px;
+}
+
+section.hero button {
+    background-color: var(--blue);
+    border: 3px solid #3A7DD1;
+    box-shadow: 1px 3px 10px 1px rgba(58, 129, 218, 0.55);
+    border-radius: 5px;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    color: #fff;
+    padding: 12px 20px;
+    margin-top: 35px;
+    cursor: pointer;
+}
+
+section.hero button:hover {
+    transition: all 0.5s;
+    transform: scale(1.05);
+    box-shadow: 1px 3px 12px 2px rgba(58, 129, 218, 0.55);
+}
+
+section.hero .img-hero {
+    width: 65%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+section.hero .img-principal {
+    width: 100%;
+    max-width: 750px;
+}
+
+.text-hero {
+    max-width: 30%;
+    min-height: 30%;
+    margin-top: 110px;
+}
+
+/* ------------ FIM HERO ------------ */
+
+/* ------------ INFO ------------ */
+
+main {
+    margin: 160px 0px 200px 0px;
+}
+
+.info {
+    width: 90%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.card-container {
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 100px;
+}
+
+.card {
+    height: 100%;
+    background: #F2F2F2;
+    box-shadow: 5px 5px 22px 1px rgba(54, 102, 163, 0.2);
+    border-radius: 5px;    
+    padding: 30px 30px 50px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+
+.card-1 {
+    margin: 0px 20px;
+}
+
+.card-2 {
+    margin: 0px 20px;
+}
+
+.card-3 {
+    margin: 0px 20px;
+}
+
+.card img {
+    width: 84px;
+    margin: auto;
+    padding: 40px 0px 60px 0px;
+}
+
+.card .body-card {
+    padding-bottom: 30px;
+}
+
+.card p {
+    color: var(--gray);
+    font-size: 1.6rem;
+}
+
+.card a {
+    font-size: 1.6rem;
+    color: #FFFFFF;
+    background-color: var(--blue);
+    width: 150px;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: auto;
+}
+
+section.info h3 {
+    color: var(--blue);
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+/* ------------ FIM INFO ------------ */
+
+/* ------------ FOOTER ------------ */
+
+section.footer {
+    width: 90%;
+    max-width: 840px;
+    margin: auto;
+}
+
+section.footer .traçado-footer {
+    width: 215px;
+    height: 2px;
+    background-color: var(--blue);
+    border-radius: 5px;
+    margin: auto;
+}
+
+section.footer .logo-footer {
+    margin: 80px 0px 40px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.footer .logo-footer img {
+    width: 43px;
+    margin-right: 20px;
+}
+
+section.footer .logo-footer span {
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: var(--blue);
+}
+
+section.footer .text-footer p {
+    font-size: 1.6rem;
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+section.footer .text-footer a {
+    font-size: 1.7rem;
+    color: var(--blue);
+}
+
+section.footer .redes-sociais {
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+section.footer .redes-sociais p {
+    font-size: 1.6rem;
+    color: var(--gray);
+}
+
+section.footer .redes-sociais a {
+    font-size: 1.7rem;
+    color: var(--blue);
+}
+
+section.footer .redes-sociais ul {
+    display: flex;
+}
+
+section.footer .redes-sociais ul li{
+    list-style: none;
+}
+
+section.footer .redes-sociais ul li a{
+    color: var(--blue);
+    font-size: 34px;
+    margin-right: 10px;
+}
+
+/* ------------ FIM FOOTER ------------ */

@@ -1,0 +1,129 @@
+/* ------------ RESPONSIVIDADE DA PÁGINA ------------ */
+
+@media (max-width: 1280px) {
+
+    .card-container {
+        grid-gap: 50px;
+    }
+
+}
+
+@media (max-width: 1136px) {
+    
+    html {
+        font-size: 52.5%;
+    }
+
+    .text-hero {
+        max-width: 40%;
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 786px) {
+    
+    header .container {
+        margin-top: 20px;
+    }
+
+    .logo {
+        width: 50px;
+        padding-top: 5px;
+    }
+
+    section.hero {
+        margin: 50px 0;
+    }
+
+    section.hero img {
+        display: none;
+    }
+    
+    section.hero .img-hero {
+        display: none;
+    }
+
+    section.hero .text-hero {
+        max-width: 100%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .one, .two, .three, .four {
+        background-color: #FFFFFF;
+        height: 3px;
+        width: 100%;
+        margin: 5px auto;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+
+    .menu-toggle {
+        background-color: var(--blue);
+        border-radius: 5px;
+        width: 51px;
+        height: 47px;
+        margin-right: 2px;
+        padding: 5px 9px 5px 9px;
+    }
+
+    .menu-section.on {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 75vw;
+        height: 100vh;
+        background-color: #EEEEEE;
+        z-index: 10;
+        display: flex;
+        box-shadow: 0px 4px 10px 170px rgba(0, 0, 0, 0.15);
+        border-radius: 20px 0px 0px 20px;   
+    }
+
+    .menu-section.on nav {
+        display: block;
+    }
+
+    .menu-section.on .menu-toggle {
+        position: absolute;
+        right: 35px;
+        top: 36px;
+    }
+
+    .menu-section.on .menu-toggle .one {
+        transform: rotate(45deg) translate(7px,7px);
+    }
+    
+    .menu-section.on .menu-toggle .two{
+        opacity: 0;
+    }
+
+    .menu-section.on .menu-toggle .three{
+        opacity: 0;
+    }
+    
+    .menu-section.on .menu-toggle .four{
+        transform: rotate(-45deg) translate(9px,-10px);
+    }
+
+    .menu-section.on nav ul {
+        display: block;
+        margin-top: 25vh;
+
+    }
+
+    .menu-section.on nav ul .btn-nav {
+        margin: 30px 0px 0px 40px;
+        text-align: center;
+    }
+    
+    .menu-section.on nav ul a{
+        transition-duration: 0.5s;
+        font-size: 1.8rem;
+        margin: 30px 0px 30px 0px;
+        display: block;
+    }
+
+}
